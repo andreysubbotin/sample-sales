@@ -15,4 +15,4 @@ The Sales application is a simple purchase management system that enables tracki
 
 The tutorial videos with the detailed description are available on the [Quick Start](https://www.cuba-platform.com/en/quickstart). The [Quick Start](https://www.cuba-platform.com/en/quickstart) enables you to start your own CUBA application within 30 minutes.
 
-Based on CUBA Platform 5.5.1
+Based on CUBA Platform 5.5.5
