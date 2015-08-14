@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<window xmlns="http://schemas.haulmont.com/cuba/5.5/window.xsd"
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         caption="msg://browseCaption"
         class="com.company.sales.gui.customer.CustomerEdit"
         datasource="customerDs"
@@ -20,7 +20,8 @@
     <layout expand="windowActions"
             spacing="true">
         <fieldGroup id="fieldGroup"
-                    datasource="customerDs">
+                    datasource="customerDs"
+                    width="300px">
             <column width="250px">
                 <field id="name"/>
                 <field id="email"/>
@@ -29,7 +30,7 @@
         <label value="msg://Orders"/>
         <table id="ordersTable"
                height="100px"
-               width="200px">
+               width="300px">
             <columns>
                 <column id="date"/>
                 <column id="amount"/>
