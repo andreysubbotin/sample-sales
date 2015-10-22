@@ -27,8 +27,8 @@
                 <field id="quantity"/>
             </column>
         </fieldGroup>
-        <iframe id="windowActions"
-                screen="editWindowActions"
-                stylename="window-actions"/>
+        <frame id="windowActions"
+               screen="editWindowActions"
+               stylename="window-actions"/>
     </layout>
 </window>

@@ -35,17 +35,7 @@ public class OrderEdit extends AbstractEditor<Order> {
         linesTableCreate.setOpenType(WindowManager.OpenType.DIALOG);
         linesTableEdit.setOpenType(WindowManager.OpenType.DIALOG);
 
-        linesDs.addListener(new CollectionDsListenerAdapter<OrderLine>() {
-            @Override
-            public void collectionChanged(CollectionDatasource ds, Operation operation, List<OrderLine> items) {
-                calculateAmount();
-            }
-
-            @Override
-            public void valueChanged(OrderLine source, String property, Object prevValue, Object value) {
-                super.valueChanged(source, property, prevValue, value);
-            }
-        });
+        linesDs.addCollectionChangeListener(e -> calculateAmount());
     }
 
     private void calculateAmount() {

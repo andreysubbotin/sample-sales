@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
-        caption="msg://browseCaption"
+        caption="msg://editCaption"
         class="com.company.sales.gui.customer.CustomerEdit"
         datasource="customerDs"
         focusComponent="fieldGroup"
@@ -37,8 +37,8 @@
             </columns>
             <rows datasource="ordersDs"/>
         </table>
-        <iframe id="windowActions"
-                screen="editWindowActions"
-                stylename="window-actions"/>
+        <frame id="windowActions"
+               screen="editWindowActions"
+               stylename="window-actions"/>
     </layout>
 </window>
