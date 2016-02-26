@@ -1,4 +1,4 @@
-# sales
+# Sales
 
 This is the ‘Hello World’ application which is designed to show the core capabilities and features of both the CUBA Platform and the CUBA Studio. The application covers the following aspects:
 - Data Model Design
