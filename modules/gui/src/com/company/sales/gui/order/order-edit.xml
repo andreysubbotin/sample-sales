@@ -19,7 +19,8 @@
                     datasource="orderDs">
             <column width="250px">
                 <field id="date"/>
-                <field id="amount"/>
+                <field id="amount"
+                       editable="false"/>
                 <field id="customer"/>
             </column>
         </fieldGroup>

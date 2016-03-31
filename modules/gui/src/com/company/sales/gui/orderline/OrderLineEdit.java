@@ -25,11 +25,11 @@ import java.util.Map;
 public class OrderLineEdit extends AbstractEditor<OrderLine> {
 
     @Named("fieldGroup.product")
-    private LookupPickerField lookupPickerField;
+    private LookupPickerField productField;
 
     @Override
     public void init(Map<String, Object> params) {
-        lookupPickerField.addOpenAction();
-        lookupPickerField.addLookupAction();
+        productField.addOpenAction();
+        productField.addLookupAction();
     }
 }

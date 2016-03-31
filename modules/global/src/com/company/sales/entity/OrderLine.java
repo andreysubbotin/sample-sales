@@ -33,7 +33,7 @@ public class OrderLine extends StandardEntity {
     @JoinColumn(name = "PRODUCT_ID")
     protected Product product;
 
-    @Column(name = "QUANTITY", precision = 19, scale = 3)
+    @Column(name = "QUANTITY", nullable = false, precision = 19, scale = 3)
     protected BigDecimal quantity;
 
     @ManyToOne(fetch = FetchType.LAZY)
