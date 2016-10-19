@@ -25,8 +25,6 @@ import java.util.Arrays;
  */
 public class SalesTestContainer extends TestContainer {
 
-    public static final SalesTestContainer.Common INSTANCE = new SalesTestContainer.Common();
-
     public SalesTestContainer() {
         super();
         appPropertiesFiles = Arrays.asList(
