@@ -21,4 +21,4 @@ The application project covers the following aspects:
 
 Prior to running integration tests, execute `startTestDb` and `createTestDb` Gradle tasks in the command line or via the Studio *Search* dialog.
 
-Based on CUBA Platform 6.2.8
+Based on CUBA Platform 6.3.2
