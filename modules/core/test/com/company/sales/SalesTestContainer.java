@@ -22,7 +22,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 /**
- *  Conatiner for integration testing.
+ *  Container for integration testing.
  */
 public class SalesTestContainer extends TestContainer {
 
