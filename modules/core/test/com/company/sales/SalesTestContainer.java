@@ -19,6 +19,7 @@ package com.company.sales;
 import com.haulmont.cuba.testsupport.TestContainer;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 /**
  *  Conatiner for integration testing.
@@ -27,6 +28,7 @@ public class SalesTestContainer extends TestContainer {
 
     public SalesTestContainer() {
         super();
+        appComponents = Collections.singletonList("com.haulmont.cuba");
         appPropertiesFiles = Arrays.asList(
                 // List the files defined in your web.xml
                 // in appPropertiesConfig context parameter of the core module

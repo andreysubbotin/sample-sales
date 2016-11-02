@@ -19,17 +19,20 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee     http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
     <context-param>
-        <description>Web resources version for correct caching in browser</description>
-        <param-name>webResourcesTs</param-name>
-        <param-value>${webResourcesTs}</param-value>
+        <param-name>appComponents</param-name>
+        <param-value>com.haulmont.cuba</param-value>
     </context-param>
-    <!-- Application properties config files -->
     <context-param>
         <param-name>appPropertiesConfig</param-name>
         <param-value>classpath:cuba-web-app.properties
             classpath:web-app.properties
             /WEB-INF/local.app.properties
             file:${catalina.home}/conf/app/local.app.properties</param-value>
+    </context-param>
+    <context-param>
+        <description>Web resources version for correct caching in browser</description>
+        <param-name>webResourcesTs</param-name>
+        <param-value>${webResourcesTs}</param-value>
     </context-param>
     <listener>
         <listener-class>com.haulmont.cuba.web.sys.WebAppContextLoader</listener-class>
@@ -65,10 +68,6 @@
         <filter-name>cuba_filter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-    <context-param>
-        <param-name>appComponents</param-name>
-        <param-value>com.haulmont.cuba</param-value>
-    </context-param>
     <servlet>
         <servlet-name>rest_api</servlet-name>
         <servlet-class>com.haulmont.restapi.sys.CubaRestApiServlet</servlet-class>
