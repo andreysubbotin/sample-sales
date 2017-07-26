@@ -15,7 +15,21 @@
  */
 package com.company.sales.gui.order;
 
+import com.company.sales.entity.Order;
+import com.company.sales.gui.order.actions.ExportCsvAction;
 import com.haulmont.cuba.gui.components.AbstractLookup;
+import com.haulmont.cuba.gui.components.Table;
+
+import javax.inject.Inject;
+import java.util.Map;
 
 public class OrderBrowse extends AbstractLookup {
+    @Inject
+    private Table<Order> ordersTable;
+
+    @Override
+    public void init(Map<String, Object> params) {
+        super.init(params);
+        ordersTable.addAction(new ExportCsvAction(ordersTable));
+    }
 }

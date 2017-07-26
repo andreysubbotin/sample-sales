@@ -37,11 +37,13 @@
             <properties include=".*"/>
         </filter>
         <table id="ordersTable"
+               multiselect="true"
                width="100%">
             <actions>
                 <action id="create"/>
                 <action id="edit"/>
                 <action id="remove"/>
+                <action id="exportCsv"/>
             </actions>
             <columns>
                 <column id="date"/>
@@ -58,6 +60,8 @@
                         action="ordersTable.edit"/>
                 <button id="removeBtn"
                         action="ordersTable.remove"/>
+                <button id="exportCsvBtn"
+                        action="ordersTable.exportCsv"/>
             </buttonsPanel>
         </table>
     </layout>

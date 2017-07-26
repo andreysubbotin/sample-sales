@@ -90,6 +90,8 @@ configure(coreModule) {
         provided(servletApi)
         jdbc(hsql)
         testRuntime(hsql)
+        //library for storing CSV
+        compile('com.opencsv:opencsv:3.10')
 
     }
 

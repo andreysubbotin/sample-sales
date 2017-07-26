@@ -33,4 +33,14 @@
     <bean class="com.company.sales.web.App"
           name="cuba_App"
           scope="prototype"/>
+    <bean class="com.haulmont.cuba.web.sys.remoting.WebRemoteProxyBeanCreator">
+        <property name="serverSelector"
+                  ref="cuba_ServerSelector"/>
+        <property name="remoteServices">
+            <map>
+                <entry key="sales_ExportCsvService"
+                       value="com.company.sales.service.ExportCsvService"/>
+            </map>
+        </property>
+    </bean>
 </beans>
